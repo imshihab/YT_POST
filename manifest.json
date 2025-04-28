@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "YT Post DL",
+    "version": "1.0",
+    "description": "Download images from YouTube community posts.",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "icons/icon.png"
+    }
+}
